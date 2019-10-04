@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Day"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Status"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgIcon2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_height="75dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:text="Min Temp"
+            android:id="@+id/tvMinTemp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:text="Max Temp"
+            android:id="@+id/tvMaxTemp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
